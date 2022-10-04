@@ -10,6 +10,7 @@ function wyszukaj() {
         document.getElementById('odpowiedz').innerHTML = "Zielone są zielone";
         window.open("https://www.youtube.com/watch?v=w4MBjfLqqMw").focus();
     } else if (s.value == "Rolex" || s.value == "rolex") {
+        document.getElementById('odpowiedz').innerHTML = "";
         document.getElementById('odpowiedz2').innerHTML = "Co to za nuta nie znam?";
     } else if (s.value == "Paulina" || s.value == "paulina") {
         document.getElementById('odpowiedz').innerHTML = "No Paulina to super osoba i megą się z nią rozmawia <3 tylko często ma zajęte usta";
