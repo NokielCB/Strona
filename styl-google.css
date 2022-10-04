@@ -15,7 +15,6 @@ section {
 }
 
 section header {
-/*    background-color: #fff;*/
     position: absolute;
     top: 0;
     width: 100%;
@@ -155,13 +154,14 @@ section footer .row.row2 ul li a{
     margin-right: 25px;
     
 }
-#odpowiedz{
+#odpowiedz, #odpowiedz2{
     position: absolute;
     top: 70vh;
     font-size: 20px;
     color: #000;
 }
-#odpowiedz:hover{
+#odpowiedz:hover,
+#odpowiedz2:hover{
     color: #2412b1;
     cursor: pointer;
 }
