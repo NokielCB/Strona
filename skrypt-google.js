@@ -3,7 +3,7 @@ function wyszukaj() {
     if (s.value == "") {
 
     } else if (s.value == "Vape" || s.value == "vape") {
-        window.open("sklep.html","_self").focus();
+        window.open("sklep.html", "_self").focus();
     } else if (s.value == "Rolnik" || s.value == "rolnik") {
         document.getElementById('odpowiedz').innerHTML = "Rolnik to dziwne stworzenie gra tylko w lige";
     } else if (s.value == "Zielone" || s.value == "zielone") {
@@ -20,7 +20,7 @@ function wyszukaj() {
     } else if (s.value == "Cugiel" || s.value == "cugiel") {
         document.getElementById('odpowiedz').innerHTML = "1 Piwo to nie piwo a 2 piwa to już lizanie z leną";
     } else if (s.value == "Gry" || s.value == "gry") {
-        window.open("gry-google.html","_self").focus();
+        window.open("gry-google.html", "_self").focus();
     } else {
         document.getElementById('odpowiedz').innerHTML = "Interesujące pytanie jednak nie znam na to opowiedzi";
     }
@@ -62,7 +62,8 @@ function losowe() {
 
     }
 }
-function rolex(){
-        window.open("https://www.youtube.com/watch?v=3QLSOiDBi2w").focus();
-        document.getElementById('odpowiedz2').innerHTML = "";
+
+function rolex() {
+    window.open("https://www.youtube.com/watch?v=3QLSOiDBi2w").focus();
+    document.getElementById('odpowiedz2').innerHTML = "";
 }

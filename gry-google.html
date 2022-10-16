@@ -16,8 +16,20 @@
     <section>
         <div class="box">
             <h1>Zgadnij liczbę!</h1>
+            <input type="text" id="odpowiedz">
+            <button id="myBtn" onclick="gra()">Start</button>
         </div>
     </section>
+    <script>
+        var input = document.getElementById("odpowiedz");
+        input.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById("myBtn").click();
+            }
+        });
+
+    </script>
 </body>
 
 </html>

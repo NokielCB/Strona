@@ -4,12 +4,14 @@
     box-sizing: border-box;
     font-family: 'arial', sans-serif;
 }
-body{
+
+body {
     background-color: #011627;
 }
-section{
+
+section {
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: auto;
     min-height: 100vh;
     overflow: hidden;
@@ -17,29 +19,31 @@ section{
     justify-content: center;
     align-items: center;
 }
-section::before{
+
+section::before {
     content: '';
     position: absolute;
     width: 400px;
     height: 400px;
-    background: linear-gradient(#ff3366,#f6f7f8);
-    transform: translate(-300px,-120px);
+    background: linear-gradient(#ff3366, #f6f7f8);
+    transform: translate(-300px, -120px);
     border-radius: 50%;
-/*    box-shadow: 0 0 40px 20px rgba(222, 113, 140, 0.3);*/
 }
-section::after{
+
+section::after {
     content: '';
     position: absolute;
     width: 300px;
     height: 300px;
-    background: linear-gradient(#2ec4b6,#20a4f3);
-    transform: translate(350px,200px);
+    background: linear-gradient(#2ec4b6, #20a4f3);
+    transform: translate(350px, 200px);
     border-radius: 50%;
 }
-.box{
+
+.box {
     position: relative;
     min-height: 600px;
-    min-width: 500px;
+    min-width: 25%;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.01);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -49,7 +53,8 @@ section::after{
     -webkit-backdrop-filter: blur(35px);
     backdrop-filter: blur(35px);
 }
-section .box h1{
+
+section .box h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,3 +62,44 @@ section .box h1{
     font-size: 2em;
 }
 
+section .box input {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+section .box button{
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    font-size: 1.5em;
+/*    background-color: transparent;*/
+/*    border: 1px solid black;*/
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+    .box {
+        min-width: 80%;
+        padding: 20px;
+/*        margin: 20px;*/
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section::after {
+        content: '';
+        transform: translate(100px, 200px);
+    }
+    section::before {
+        content: '';
+        transform: translate(-250px, -200px);
+    }
+}
