@@ -1,5 +1,6 @@
 function wyszukaj() {
     s = document.getElementById('s');
+    document.getElementById('odpowiedz2').innerHTML = "";
     if (s.value == "") {
 
     } else if (s.value == "Vape" || s.value == "vape") {
@@ -10,15 +11,20 @@ function wyszukaj() {
         document.getElementById('odpowiedz').innerHTML = "Zielone są zielone";
         window.open("https://www.youtube.com/watch?v=w4MBjfLqqMw").focus();
     } else if (s.value == "Rolex" || s.value == "rolex") {
+        document.getElementById('odpowiedz').innerHTML = "";
         document.getElementById('odpowiedz2').innerHTML = "Co to za nuta nie znam?";
     } else if (s.value == "Paulina" || s.value == "paulina") {
-        document.getElementById('odpowiedz').innerHTML = "No Paulina to super osoba i megą się z nią rozmawia <3 tylko często ma zajęte usta";
+        document.getElementById('odpowiedz').innerHTML = "Paulina to najlepszy Plan A";
     } else if (s.value == "Karolina" || s.value == "karolina") {
-        document.getElementById('odpowiedz').innerHTML = "Karolina bije cugla";
+        document.getElementById('odpowiedz').innerHTML = "Karolina bije cugla, jednak przerzuciła się na Antka";
     } else if (s.value == "Ania" || s.value == "ania") {
         document.getElementById('odpowiedz').innerHTML = "Ania nie bij mnie więcej prosze";
     } else if (s.value == "Cugiel" || s.value == "cugiel") {
-        document.getElementById('odpowiedz').innerHTML = "1 Piwo to nie piwo a 2 piwa to już lizanie z leną";
+        document.getElementById('odpowiedz').innerHTML = "Cugiel simpuje do Karoliny jednak nie możemy zapomnieć że lizał się z leną";
+    } else if (s.value == "Antek" || s.value == "antek") {
+        document.getElementById('odpowiedz').innerHTML = "Antek jak tam cygareta? i jak tam Karolina?";
+    } else if (s.value == "Lena" || s.value == "lena") {
+        document.getElementById('odpowiedz').innerHTML = "Lena ma małego siusiaka";
     } else if (s.value == "Gry" || s.value == "gry") {
         window.open("gry-google.html", "_self").focus();
     } else {
