@@ -36,7 +36,7 @@ section::after {
     width: 300px;
     height: 300px;
     background: linear-gradient(#2ec4b6, #20a4f3);
-    transform: translate(350px, 200px);
+    transform: translate(300px, 200px);
     border-radius: 50%;
 }
 
@@ -63,31 +63,59 @@ section .box h1 {
 }
 
 section .box input {
+    display: none;
     margin: auto;
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid black;
     border-radius: 10px;
     font-size: 1.5em;
 }
-section .box button{
-    margin: auto;
-    margin-top: 20px;
+
+section .box button {
     display: flex;
+    margin: 50% auto;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 22px 34px;
+    border: 0;
+    color: #000021;
+    background: #e5f4f0;
+    line-height: 1.15;
     font-size: 1.5em;
-/*    background-color: transparent;*/
-/*    border: 1px solid black;*/
-    border-radius: 10px;
+    transition: all .1s ease;
+}
+section .box button:hover {
+    transition: all .1s ease;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #e5f4f0;
+}
+section .box #stan {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 1.2em;
+}
+section .box #sprawdz{
+    display: none;
+}
+section .box #opis {
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 1.5em;
 }
 
 @media (max-width: 500px) {
     .box {
         min-width: 80%;
         padding: 20px;
-/*        margin: 20px;*/
     }
 
     section {
@@ -98,6 +126,7 @@ section .box button{
         content: '';
         transform: translate(100px, 200px);
     }
+
     section::before {
         content: '';
         transform: translate(-250px, -200px);

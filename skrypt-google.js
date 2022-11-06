@@ -18,7 +18,7 @@ function wyszukaj() {
     } else if (s.value == "Karolina" || s.value == "karolina") {
         document.getElementById('odpowiedz').innerHTML = "Karolina bije cugla, jednak przerzuciła się na Antka";
     } else if (s.value == "Ania" || s.value == "ania") {
-        document.getElementById('odpowiedz').innerHTML = "Ania nie bij mnie więcej prosze";
+        document.getElementById('odpowiedz').innerHTML = "Ania to za wysoka liga";
     } else if (s.value == "Cugiel" || s.value == "cugiel") {
         document.getElementById('odpowiedz').innerHTML = "Cugiel simpuje do Karoliny jednak nie możemy zapomnieć że lizał się z leną";
     } else if (s.value == "Antek" || s.value == "antek") {
