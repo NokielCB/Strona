@@ -65,6 +65,7 @@ section .box h1 {
 section .box input {
     display: none;
     margin: auto;
+    width: 70%;
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid black;
@@ -114,7 +115,7 @@ section .box #opis {
 
 @media (max-width: 500px) {
     .box {
-        min-width: 80%;
+        min-width: 90%;
         padding: 20px;
     }
 
